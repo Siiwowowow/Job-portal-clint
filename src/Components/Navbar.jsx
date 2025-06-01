@@ -84,6 +84,13 @@ const Navbar = () => {
             <NavLink to="/jobSite" className={navLinkClass}>
               Jobs
             </NavLink>
+            {
+              user&& <>
+              <NavLink to="/myApplications" className={navLinkClass}>
+              My-Application
+            </NavLink>
+              </>
+            }
             <NavLink to="/about" className={navLinkClass}>
               About Us
             </NavLink>
